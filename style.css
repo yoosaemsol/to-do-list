@@ -1,0 +1,239 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+:root {
+  /* color */
+  --color-light-grey: #f5f5f5;
+  --color-grey: #aeaeae;
+  --color-dark-grey: #c4c4c4;
+  --color-white: #ffffff;
+  --color-red: #fd4640;
+
+  --color-light-yellow: #fbf3db;
+  --color-yellow: #dfab00;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--color-light-grey); */
+  background-color: var(--color-white);
+}
+
+.container {
+  width: 690px;
+  height: 80vh;
+  background-color: var(--color-white);
+  border-radius: 5px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 95px;
+
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+/* date */
+.clock-and-date {
+  display: flex;
+  align-items: center;
+}
+
+.js-date h1 {
+  font-size: 15px;
+  color: var(--color-dark-grey);
+  margin-right: 10px;
+  font-weight: 400;
+}
+
+/* clock */
+.js-clock {
+  font-size: 10px;
+  padding: 1px 2px;
+  width: 50px;
+
+  text-align: center;
+  border-radius: 2px;
+
+  color: var(--color-white);
+  background-color: var(--color-dark-grey);
+}
+
+.js-clock h1 {
+  font-weight: 400;
+}
+
+/* asking username */
+.greetings {
+  margin-bottom: 10px;
+  height: 20px;
+  width: 500px;
+}
+
+.greetings input {
+  border: none;
+  border-bottom: 1px solid var(--color-grey);
+
+  font-size: 15px;
+}
+
+.greetings input:focus {
+  border: none;
+  outline: none;
+}
+
+/* username */
+.user-name {
+  display: flex;
+  align-items: center;
+}
+
+.user-name h1 {
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.mark {
+  color: var(--color-yellow);
+}
+
+.username-container > span {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: var(--color-light-yellow);
+  margin-top: 3px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.user-name > button {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-size: 10px;
+  border-radius: 5px;
+  height: 20px;
+  margin-bottom: 10px;
+  transform: translateY(6px);
+}
+
+.username-input {
+  transform: translateY(5px);
+  width: 200px;
+}
+
+.username-input,
+.greetings,
+.js-resetBtn {
+  display: none;
+}
+
+/* .showing { 맨뒤로 옮김
+  display: block;
+} */
+
+/* todo-input */
+.todo-form input {
+  border: none;
+  border-bottom: 1px solid var(--color-dark-grey);
+  color: var(--color-dark-grey);
+  padding: 0 5px;
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+.todo-form input::placeholder {
+  color: var(--color-dark-grey);
+}
+
+/* todo-list */
+.js-todo {
+  flex-grow: 2;
+}
+.doto-list {
+  /* display: flex; */
+  /* background-color: aqua; */
+  height: 300px;
+  width: 100%;
+  overflow: scroll;
+}
+
+.doto-list h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.todo-list-container {
+  /* margin-bottom: 30px; */
+  /* flex-grow: 1; */
+}
+.finished-container {
+  /* flex-grow: 1; */
+}
+
+li {
+  /* background-color: var(--color-light-grey); */
+
+  border-radius: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.js-toDoList li input,
+.js-finishedToDoList li input {
+  margin-right: 5px;
+}
+
+.js-toDoList li input:checked + label,
+.js-finishedToDoList li input:checked + label {
+  color: var(--color-dark-grey);
+  text-decoration: line-through;
+}
+
+.js-toDoList li label,
+.js-finishedToDoList li label {
+  margin-right: 5px;
+  /* cursor: grab; */
+  cursor: pointer;
+}
+
+.js-toDoList li i {
+  /* display: none; */
+}
+
+.showing {
+  display: block;
+}
+
+.fa-trash {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.no {
+  visibility: visible;
+}

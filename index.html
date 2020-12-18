@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome app</title>
+    <script defer src="./date.js"></script>
+    <script defer src="./clock.js"></script>
+    <script defer src="./greetings.js"></script>
+    <script defer src="./todo.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ee1cbfb3bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <!-- clock and date-->
+      <div class="clock-and-date">
+        <div class="js-date">
+          <h1></h1>
+        </div>
+        <div class="js-clock">
+          <h1>00:00</h1>
+        </div>
+      </div>
+
+      <!-- greetings -->
+      <form action="" class="js-greetings greetings">
+        <input
+          class="username-input"
+          type="text"
+          name=""
+          id=""
+          placeholder="What's your name? 👋🏻"
+        />
+      </form>
+      <div class="username-container">
+        <div class="user-name">
+          <h1></h1>
+          <button class="js-resetBtn" type="button">reset</button>
+        </div>
+        <span>These are the things you need to do.</span>
+      </div>
+
+      <!-- todo -->
+      <div class="js-todo">
+        <form action="" class="js-todoForm todo-form">
+          <label for="todo">✏️</label>
+          <input
+            autocomplete="off"
+            type="text"
+            placeholder="Write it down here"
+            id="todo"
+          />
+        </form>
+        <div class="doto-list">
+          <div class="todo-list-container">
+            <h3>ToDo</h3>
+            <ul class="js-toDoList"></ul>
+          </div>
+          <div class="finished-container">
+            <!-- <h3>Finished</h3> -->
+            <ul class="js-finishedToDoList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
