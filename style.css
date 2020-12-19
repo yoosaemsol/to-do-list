@@ -346,8 +346,8 @@ body.dark h3 {
 
   .todo-form {
     /* background-color: var(--color-red); */
-    position: absolute;
-    bottom: 30px;
+    /* position: absolute;
+    bottom: 30px; */
   }
 
   .todo-form input {
