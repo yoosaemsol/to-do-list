@@ -353,10 +353,6 @@ body.dark h3 {
   .todo-form input {
     width: 260px;
     font-size: 15px;
-
-    /* 모바일 추가 스타일 제거 */
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
   }
 
   .js-todo {
