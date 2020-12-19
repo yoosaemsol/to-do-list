@@ -353,4 +353,13 @@ body.dark h3 {
   .todo-form input {
     width: 260px;
   }
+
+  .js-todo {
+    height: min-content;
+    flex-grow: 0;
+  }
+
+  .js-todo .doto-list {
+    height: 65vh;
+  }
 }
