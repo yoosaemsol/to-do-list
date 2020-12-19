@@ -362,7 +362,6 @@ body.dark h3 {
   .todo-form input {
     width: 260px;
     font-size: 15px;
-    border: none;
   }
 
   .js-todo {
@@ -372,5 +371,9 @@ body.dark h3 {
 
   .js-todo .doto-list {
     height: 65vh;
+  }
+
+  body.dark .js-todoForm input {
+    border: none;
   }
 }
