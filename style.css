@@ -362,6 +362,7 @@ body.dark h3 {
   .todo-form input {
     width: 260px;
     font-size: 15px;
+    border: none;
   }
 
   .js-todo {
