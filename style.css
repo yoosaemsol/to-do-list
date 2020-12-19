@@ -331,12 +331,22 @@ body.dark h3 {
 @media screen and (min-width: 1px) and (max-width: 480px) {
   body {
     height: 100vh;
+    overflow: hidden; /* 모바일에서 스크롤 금지 */
+
+    background-color: rosybrown;
+    display: block;
   }
 
   .container {
     width: 100%;
     height: 100vh;
     padding: 40px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .greetings input {
+    border: none;
   }
 
   .todo-list-container {
@@ -353,6 +363,7 @@ body.dark h3 {
   .todo-form input {
     width: 260px;
     font-size: 15px;
+    border: none;
   }
 
   .js-todo {
