@@ -356,7 +356,7 @@ body.dark h3 {
 
     /* 모바일 추가 스타일 제거 */
     -webkit-appearance: none;
-    -webkit-border-radius: 0px;
+    -webkit-border-radius: 0;
   }
 
   .js-todo {
